@@ -309,9 +309,11 @@ function togglePause() {
 
 // 窗口大小调整
 function onWindowResize() {
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    if (camera && renderer) {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    }
 }
 
 // 事件监听器
@@ -357,8 +359,8 @@ function setupEventListeners() {
 
 // 初始化应用
 function init() {
-    setupEventListeners();
     initScene();
+    setupEventListeners();
 }
 
 // 页面加载完成后初始化
