@@ -1,0 +1,19 @@
+{
+  "name": "bouncing-balls-physics",
+  "version": "1.0.0",
+  "description": "十五个小球随机跳跃物理模拟",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx http-server -p 8080",
+    "dev": "npx http-server -p 8080 -o"
+  },
+  "dependencies": {
+    "three": "^0.157.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "keywords": ["three.js", "physics", "animation", "3d"],
+  "author": "",
+  "license": "MIT"
+}
