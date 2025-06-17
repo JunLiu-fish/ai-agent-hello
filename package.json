@@ -1,0 +1,32 @@
+{
+  "name": "threejs-demo",
+  "version": "1.0.0",
+  "description": "一个简单的Three.js旋转立方体演示项目",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "npx live-server ."
+  },
+  "keywords": [
+    "threejs",
+    "3d",
+    "webgl",
+    "javascript",
+    "demo"
+  ],
+  "author": "AI Assistant",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
